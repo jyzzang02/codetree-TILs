@@ -18,11 +18,11 @@ public:
 };
 
 int main() {
-    string code;
-    char color;
-    int second;
-    cin >> code >> color >> second;
-    Bom bom = Bom(code, color, second);
+    string S_code;
+    char S_color;
+    int S_second;
+    cin >> S_code >> S_color >> S_second;
+    Bom bom = Bom(S_code, S_color, S_second);
     cout << "code : " << bom.code << endl;
     cout << "color : " << bom.color << endl;
     cout << "second : " << bom.second << endl;
