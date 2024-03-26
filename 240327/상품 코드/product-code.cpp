@@ -8,7 +8,7 @@ class Product {
 public:
     string name;
     int code;
-    Product(string name="", int code=0) {
+    Product(string name, int code) {
         this->name = name;
         this->code = code;
     }
@@ -16,14 +16,13 @@ public:
 };
 
 int main() {
+   
+    Product pro1 = Product("codetree", 50);
+
     string name_s;
     int code_s;
-
-    Product pro1 = Product(name_s="", code_s = 0);
-    pro1.name = "codetree";
-    pro1.code = 50;
-
     cin >> name_s >> code_s;
+
     Product pro2 = Product(name_s, code_s);
     
 
